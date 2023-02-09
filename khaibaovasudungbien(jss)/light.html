@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="cars" src="img/phai.jpeg" alt=""> <br>
+  <button  onclick="turnleft()">trai</button>
+  <button onclick="turnright()">phai</button>
+  <button  onclick="turnup()">tren</button>
+  <button  onclick="turndown()">duoi</button>
+<!-- <button onclick="">left</button>
+  <button onclick="">up</button>
+ <button onclick="">right</button> -->
+ <script>
+     function turnleft(){
+      document.getElementById('cars').src='img/trai.jpeg';
+ }
+ function turnright(){
+     document.getElementById('cars').src='img/phai.jpeg';
+ }
+ function turnup(){
+     document.getElementById('cars').src='img/tren.jpeg';
+ }
+ function turndown(){
+     document.getElementById('cars').src='img/duoi.jpeg';
+ }
+   
+ </script>
+ 
+</html>
