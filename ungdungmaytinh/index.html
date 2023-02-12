@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <tr>
+            <td id="so11"><input type="text"></td>
+            <td id="so22"><input type="text"></td>
+            </tr><br><br>
+        <tr>
+            <button id="cong" onclick="cong1()">Addition(+)</button>
+            <button id="tru" onclick="tru1()">Subtraction(-)</button>
+            <button id="nhan" onclick="nhan1()">Multiplication(X)</button>
+            <button id="chia" onclick="chia1()">Division(/)</button>
+        </tr>
+        <br><br>
+
+    </form>
+    <script>
+        function cong1() {
+            var n1 = document.getElementById('so11').value;
+            var n2 = document.getElementById('so22').value;
+            var congg = document.getElementById('cong').value;
+            var truu = document.getElementById('tru').value;
+            var nhann = document.getElementById('nhan').value;
+            var chiaa = document.getElementById('chia').value;
+            var result = 0;
+            if(cong == "Addition(+)") {
+                ketqua = parseInt ('n1 + n2');
+            } else if (tru == "Subtraction(-)" ){
+                ketqua = parseInt ('n1 - n2');
+            } else if (nhan == "Multiplication(X)") {
+                ketqua = parseInt ('n1 / n2');
+            } else if (chia == "Division(/)" );
+                ketqua = parseInt ('n1 / n2'); {
+            document.getElementById('so11').value = ketqua;
+        }
+    
+    </script>
+
+</body>
+</html>
