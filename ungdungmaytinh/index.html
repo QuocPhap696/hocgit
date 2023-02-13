@@ -13,10 +13,12 @@
             <td id="so22"><input type="text"></td>
             </tr><br><br>
         <tr>
-            <button id="cong" onclick="cong1()">Addition(+)</button>
+            <button id="cong" >Addition(+)</button>
             <button id="tru" onclick="tru1()">Subtraction(-)</button>
             <button id="nhan" onclick="nhan1()">Multiplication(X)</button>
             <button id="chia" onclick="chia1()">Division(/)</button>
+            Result <input type="text" id="result">
+            <button onclick="myFuntion()">Submit</button>
         </tr>
         <br><br>
 
@@ -30,15 +32,16 @@
             var nhann = document.getElementById('nhan').value;
             var chiaa = document.getElementById('chia').value;
             var result = 0;
-            if(cong == "Addition(+)") {
-                ketqua = parseInt ('n1 + n2');
+            if(cong == "Addition(+)") 
+              result = parent(n1) + parent(n2);
+            
             } else if (tru == "Subtraction(-)" ){
-                ketqua = parseInt ('n1 - n2');
+                result = parent(n1) - parent(n2);
             } else if (nhan == "Multiplication(X)") {
                 ketqua = parseInt ('n1 / n2');
             } else if (chia == "Division(/)" );
                 ketqua = parseInt ('n1 / n2'); {
-            document.getElementById('so11').value = ketqua;
+            document.getElementById('cong').value = ketqua;
         }
     
     </script>
