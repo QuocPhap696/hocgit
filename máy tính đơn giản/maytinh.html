@@ -11,39 +11,39 @@
         border-collapse: collapse
     }
     td { border: 0;
-        padding: 6px;
-        
+        padding: 6px;  
     }
+    
 </style>
 <body>
     <table border="3" style="width: 250px; height: 300px;">
         <tr>
-            <td colspan="4" id="result"> <input style="width: 250px;" type="text" value="" placeholder="Nhập vào đây"></td>
+            <td colspan="4" id="result"> <input id= "maytinh" style="width: 250px;" type="text" value="" placeholder="Nhập vào đây"></td>
          </tr>
         <tr>
-            <td><input style="width: 30px; height: 30px;" type="button" value="1"></td>
-            <td><input style="width: 30px; height: 30px;" type="button" value="2"></td>
-            <td><input style="width: 30px; height: 30px;" type="button" value="3"></td>
-            <td><input style="width: 30px; height: 30px;" type="button" value="+"></td>
+            <td><input style="width: 30px; height: 30px;" type="button" value="1" onclick="buttonHandler(value)"></td>
+            <td><input style="width: 30px; height: 30px;" type="button" value="2" onclick="buttonHandler(value)".></td>
+            <td><input style="width: 30px; height: 30px;" type="button" value="3" onclick="buttonHandler(value)"></td>
+            <td><input style="width: 30px; height: 30px;" type="button" value="+" onclick="buttonHandler(value)"></td>
             
         </tr>
         <tr>
-            <td><input style="width: 30px; height: 30px;" type="button" value="4"></td>
-            <td><input style="width: 30px; height: 30px;" type="button" value="5"></td>
-            <td><input style="width: 30px; height: 30px;" type="button" value="6"></td>
-            <td><input style="width: 30px; height: 30px;" type="button" value="-"></td>
+            <td><input style="width: 30px; height: 30px;" type="button" value="4" onclick="buttonHandler(value)"></td>
+            <td><input style="width: 30px; height: 30px;" type="button" value="5" onclick="buttonHandler(value)"></td>
+            <td><input style="width: 30px; height: 30px;" type="button" value="6" onclick="buttonHandler(value)"></td>
+            <td><input style="width: 30px; height: 30px;" type="button" value="-" onclick="buttonHandler(value)"></td>
         </tr>
         <tr>
-            <td><input style="width: 30px; height: 30px;" type="button" value="7"></td>
-            <td><input style="width: 30px; height: 30px;" type="button" value="8"></td>
-            <td><input style="width: 30px; height: 30px;" type="button" value="9"></td>
-            <td><input style="width: 30px; height: 30px;" type="button" value="*"></td>
+            <td><input style="width: 30px; height: 30px;" type="button" value="7" onclick="buttonHandler(value)"></td>
+            <td><input style="width: 30px; height: 30px;" type="button" value="8" onclick="buttonHandler(value)"></td>
+            <td><input style="width: 30px; height: 30px;" type="button" value="9" onclick="buttonHandler(value)"></td>
+            <td><input style="width: 30px; height: 30px;" type="button" value="*" onclick="buttonHandler(value)"></td>
         </tr>
         <tr>
-            <td><input style="width: 30px; height: 30px;" type="button" value="C"></td>
-            <td><input style="width: 30px; height: 30px;" type="button" value="0"></td>
-            <td><input style="width: 30px; height: 30px;" onclick="myFunction()" type="button" value="="></td>
-            <td><input style="width: 30px; height: 30px;" type="button" value="/"></td>
+            <td><input style="width: 30px; height: 30px;" type="button" value="C" onclick="del()"></td>
+            <td><input style="width: 30px; height: 30px;" type="button" value="0" onclick="buttonHandler(value)"></td>
+            <td><input style="width: 30px; height: 30px;" type="button" value="=" onclick="ketqua()"></td>
+            <td><input style="width: 30px; height: 30px;" type="button" value="/" onclick="buttonHandler(value)"></td>
         </tr>
     </table>
     <script src="java.js"></script>
