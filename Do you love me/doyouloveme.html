@@ -1,0 +1,60 @@
+ <!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        background: linear-gradient( 500deg, #ff009c, #00ff63);
+    }
+    
+
+    h2 {
+        position: absolute;
+        left: 220px;
+        top: 175px;
+        width: auto;
+        height: 210px;
+    }
+    #so1 {
+        position: absolute;
+        left: 285px;
+        top: 235px;
+        width: 210px;
+        height: 210px;
+    }
+    #so2 {
+        position: absolute;
+        left: 360px;
+        top: 235px;
+        width: 210px;
+        height: 210px;  
+    }
+</style>
+<body>
+    <tr> 
+  <h2>Do you love me ?</h2>
+  <div id="so1"> <input type="button" value="Yes" onclick="myFunction()"> </div>
+  <div id="so2"> <input type="button" value="No" onmouseover="no()" id="hihi" style="position: relative;" ></div>
+
+</tr>
+<script>
+    
+    var a = 1
+    function myFunction() {
+        alert ('Tất nhiên là có rồi " my girl " !')
+        
+    } 
+    function no() {
+        let x = Math.round(Math.random() * window.innerWidth);
+        let y = Math.round(Math.random() * window.innerHeight);
+        document.getElementById("hihi").style.left = x + 'px';
+        document.getElementById("hihi").style.top = y + 'px';
+    }  
+</script>
+</body>
+</html> 
