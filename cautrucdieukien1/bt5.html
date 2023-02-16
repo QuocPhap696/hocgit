@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diem trung binh</title>
+</head>
+<body>
+    <script>
+        let diemkiemtra = prompt(" Bae nhập vào đây ") ;
+        let diemgiuaki = prompt(" Bae nhập vào đây ");
+        let diemcuoiki = prompt(" Bae nhập vào đây ");
+        
+        a = +parseFloat(diemkiemtra);
+        b = +parseFloat(diemgiuaki);
+        c = +parseFloat(diemcuoiki);
+        let hocluc = ((a + b + c) / 3);
+       
+       if (hocluc > 8) {
+        document.write ('Giỏi ghê má')
+       } 
+       else if (hocluc > 6 ) {
+        document.write ( "Khá ghê má" );
+       } 
+       else if (hocluc >4.5) {
+        document.write (" Coi chừng học lại má")
+       }
+      else if (hocluc < 4.5) {
+        document.write ("Học lại má");
+      }
+      
+    </script>
+</body>
+</html>
