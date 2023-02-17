@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải phương trình bậc 2</title>
+</head>
+<body>
+    <script>
+        let a = prompt ("Nhập a vô ba")
+        let b = prompt ("Nhập b vô ba")
+        let c = prompt ("Nhập c vô ba")
+        let delta = (b * 2) - (4 * a * c);
+        
+        if (delta < 0) {
+            document.write (" Phương trình vô nghiệm má");
+        } if( delta == 0) {
+            document.write(" Phương trình có nhiệm kép x1 == x2 == " + -b / ( a * a)); 
+        } if (delta > 0) {
+            document.write ( "Phương trình có hai nghiệm x1 = " + ((-b + Math.sqrt(delta)) / a * a)), 
+             document.write(" x2 = " + ((-b - Math.sqrt(delta)) / a * a));
+        }
+    </script>
+    
+</body>
+</html> 
+
