@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chương trình tính giá điện</title>
+</head>
+<body>
+    <script>
+        let caoAp = prompt("caoap");
+        let chudien = prompt("chudien");
+        switch (true) {
+            case caoAp <= 6:
+            alert ("Tien dien cua ban la" + chudien * 1500);
+            break;
+                case caoAp <= 22:   
+                alert("Tien dien cua ban la" + chudien * 1700);
+                break;
+                    case caoAp <= 110:
+                    alert("Tien dien cua ban la" + chudien * 1900);
+                    break;
+                        case caoAp > 150:
+                        alert ("Tien dien cua ban la" + chudien * 2100);
+                        break;
+
+        }
+    </script>
+</body>
+</html>

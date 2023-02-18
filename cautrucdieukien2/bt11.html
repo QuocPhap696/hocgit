@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+    <script>
+        let luong = +prompt ("Nhập số tiền lương") 
+           switch (true) {
+            case luong <= 5:
+                alert ("Số tiền thuế của bạn là 5% ");
+                break;
+                    case luong <= 10:
+                        alert ("Số tiền thuế của bạn là 10% ");
+                        break;
+                            case luong <= 18:
+                            alert ("Số tiền thuế của bạn là 15% ");
+                            break;
+                                case luong <= 32:
+                                alert ("Số tiền thuế của bạn là 20% ");
+                                break;
+                                    case luong <= 52:
+                                    alert ("Số tiền thuế của bạn là 25% ");
+                                    break;
+                                        case luong > 52:
+                                        alert ("Số tiền thuế của bạn là 30% ");
+                                        break;
+           }
+
+           
+        
+    </script>
+</body>
+</html>
