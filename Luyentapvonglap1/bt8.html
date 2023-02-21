@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT8</title>
+</head>
+<body>
+    <button onclick="doanso">Bắt đầu</button>
+    <script>
+    function doanso () {
+       let number = +prompt("Số bạn muốn đoán là nhiêu ?")
+       let number1 = Math.floor(Math.random() * number);
+       console.log(number1);
+       let numbercheck = +prompt ("Nhập số a trai muốn đoán");
+       let count = 0;
+       while (numbercheck !== number1) {
+            count++;
+            if (count == 3) {
+                alert("Bạn hết số lần đoán")
+                break;
+            } if (numbercheck == number1) {
+                alert ("Chúc mừng bạn đã đoán đúng");
+            } if (numbercheck > number1) {
+                alert ("số bạn đoán lớn hơn");
+                alert(+prompt("Nhập số vào"));
+            } else {
+                alert("Số bạn đoán nhỏ hơn");
+                alert(+prompt("Nhập số bạn đoán"))
+            }
+        }
+    }
+    </script>
+</body>
+</html>  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <button id="game" type="button" onclick="play()">PLay</button>
+<script>
+    function play(){
+        let numBer = +prompt("Bạn muốn đoán trong khoảng bao nhiêu?");
+        let systemNumber = Math.floor(Math.random() * numBer);
+        console.log(systemNumber);
+        let numberCheck = +prompt("Nhập số bạn đoán:");
+        let count = 0 ;
+        while (numberCheck !== systemNumber) {
+            count++;
+            if (count == 3){
+                alert("Bạn đã hết lượt");
+                break;
+            } if (numberCheck == systemNumber){
+                alert("Chúc mừng bạn đã đúng!!");
+            } if (numberCheck > systemNumber){
+                alert("Số bạn đoán lớn hơn!");
+                alert(+prompt("Nhập số bạn đoán:"));
+            } else {
+                alert("Số bạn đoán nhỏ hơn.");
+                alert(+prompt("Nhập số bạn đoán:"))
+            }
+        }
+    }
+</script>
+</body>
+
+</html>  -->

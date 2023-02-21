@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT4</title>
+</head>
+<body>
+    <script>
+        
+        const Number = parseInt(prompt('Nhập số bạn vào:'))
+        let n1 = 0;
+        let n2 = 1;
+        let nextTerm;
+        document.write('Fibonacci' + "<br>")
+        for (let i = 1; i <= Number; i++) {
+            document.write(n1 + "<br>");
+            nextTerm = n1 + n2;
+            n1 = n2;
+            n2 = nextTerm;
+
+            if (n1 % 5 == 0) {
+                document.write(n1 + "la chia het co 5");
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
