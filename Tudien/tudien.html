@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Từ Điển</title>
+</head>
+<body>
+    <h3>Từ Điển</h3>
+    <input id="string" type="text" placeholder="Nhập từ">
+    <input  type="button" value="tim" onclick="trans()">
+    
+    <script>
+        function trans() {
+            let English = ["banana", "yellow", "monkey", "water"];
+            
+            let VietNam = ["Chuối", "Màu Vàng", "Con Khỉ", "Nước"];
+            let indexEng = -1;
+            let reseult = "";
+            let string = document.getElementById("string").value;
+            for (let i = 0; i < English.length; i++) {
+                if (string.toLowerCase()==English[i].toLowerCase()){
+                    indexEng = i ;
+                
+                    break;
+                }  
+            } 
+            if(indexEng == -1){
+                alert("khong tim thay");   
+            }else{
+                alert(VietNam[indexEng]);   
+            }
+             
+
+        }
+    
+    </script>
+</body>
+</html>
