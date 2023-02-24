@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra số nguyên tố</title>
+</head>
+<body>
+    <script>
+      let a = prompt("Nhập vào đây nào bae ?") ;
+       function isPrime(a) {
+        if (a < 2) {
+            document.write("a khong la so nguyen to")
+            return false;
+        } 
+        for (let i = 2; i < a; i++ ) {
+            if ( a % i == 0) {
+                document.write("a khong la so nguyen to")
+            return false
+              
+               
+            } else {
+                document.write("a la so nguyen to")
+               return true; 
+            }
+        }
+       }
+      console.log(isPrime(a));
+    </script>
+</body>
+</html>
