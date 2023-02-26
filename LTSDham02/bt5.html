@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 số nguyên bất kỳ</title>
+</head>
+<body>
+    <script>
+        let a = prompt ("Nhập số a");
+        let b = prompt ("Nhập số b");
+        let c = prompt ("Nhập số c");
+       
+        function findMin (a, b, c) {
+            if (a > c ) {
+               if (b > c) {
+                document.write(c + "là min");
+               } else {
+                document.write(b + "là min")
+               } 
+            } else if (a > b) {
+                document.write(b + "là min");
+            } else {
+                document.write(a + "là min")
+            }
+        } 
+        findMin(a,b,c);
+    
+    </script>
+</body>
+</html>
