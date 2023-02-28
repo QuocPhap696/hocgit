@@ -69,26 +69,53 @@
 <body>
     <canvas id="canvas" width="500px" height="250px" style="border: 1px solid #e01e1e;"></canvas>
     <button value="Ramdom Rec" onclick="handleRamdomClick">Ramdom Rec</button>
-    <button value="Area Rec">Area Rec</button>
-    <button value="Perimiter Rec">Perimiter Rec</button>
+    <button value="Area Rec" onclick="handleAreaClick()">Area Rec</button>
+    <button value="Perimiter Rec" onclick="handlePerimiterClick()">Perimiter Rec</button>
     <button value="X2 Size">X2 Size</button>
-    <button value="ChangleColor">ChangleColor</button>
+    <button value="ChangleColor" onclick="handleColorClick()">ChangleColor</button>
     <script>
         function Rectangle(x, y, width, height) {
             this.x = x;
             this.y = y;
             this.width = width;
             this.height = height;
+            this.getarea = function () {
+                return this.width * this.height;
+            }
+            this.getperimiter = function() {
+                return (this.width + this.height) * 2;
+            }
+            
         }
-        function createrRectangle() {
-                var canvas = document.getElementById("canvas").getContext("2d");
+        var canvas = document.getElementById("canvas").getContext("2d");
                 var rectangle = new Rectangle(100, 100, 300, 300);
+        function createrRectangle() {
                 // canvas.beginPath();
                 canvas.fillRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
                 canvas.fillStyle = '#e01e1e';
                 // canvas.fill();
         }
       createrRectangle()
+      
+      function handleAreaClick() {
+        alert ('Diện tích của bé là :' + rectangle.getarea());
+      } 
+     
+
+      function handlePerimiterClick() {
+        alert('Chu vi của bé là :' + rectangle.getperimiter())
+      }
+    //   function handleColorClick() {
+    //     var letters = '0123456789ABCDEF';
+    //         var color = '#6f00ff';
+    //         for (var i = 0; i < 6; i++) {
+    //             color += letters[Math.floor(Math.random() * 16)];
+    //   } return color;
+    // }  
+    // function changeColor() {
+    //     let color = handleColorClick();
+
+    // }
     </script>
 </body>
 </html>
