@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+</head>
+<body>
+    <script>
+        function Temperature(celcius) {
+            this.celcius = celcius;
+            this.getCelcius = function() {
+                return this.celcius;
+            }
+            this.setCelcius = function(celcius) {
+                this.celcius = celcius;
+            }
+            this.getFahrenheit = function() {
+                return this.celcius * 1.8 + 32;
+            }
+            this.getKenvin = function() {
+                return this.celcius + 273.15;
+            }
+        }
+        let cel = new Temperature (25);
+        let celcius = cel.getCelcius();
+        document.write("Độ C: " + celcius + "<br>");
+        document.write("Độ F: " + cel.getFahrenheit() + "<br>");
+        document.write("Độ Kenvin: " + cel.getKenvin() + "<br>");
+    </script>
+</body>
+</html>
