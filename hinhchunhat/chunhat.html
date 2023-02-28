@@ -1,0 +1,94 @@
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hinh chu nhat</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1000px" height="800px" style="border: 1px solid #d3d3d3;"></canvas>
+    <button type="button" onclick="handleRamdomClick()">ramdom</button>
+    <script>
+        function Rectangle(width, height) {
+            this.width = width;
+            this.height = height;    
+        
+            this.getHeight = function() {
+                return this.height;
+            }
+            this.getWidth = function() {
+                return this.width;
+            }
+
+            this.setHeight = function(height) {
+                this.height = height;
+            }
+            this.setWidth = function(width) {
+                this.width = width;
+            }
+            this.getArea = function() {
+                return this.height * this.width;
+            }
+            this.getPerimiter = function() {
+                return(this.width + this.height) * 2;
+            }
+        }
+
+        var ractangle= new Rectangle(150, 300); 
+        var hcn = document.getElementById("myCanvas").getContext("2d");          
+        function createrRectangle(color){
+            let width = Rectangle.width;
+            let height = Rectangle.height;
+            hcn.fillStyle = color;
+            hcn.fillRect(30, 30, width, height);
+            hcn.clearRect(0, 0, hcn.canvas.width, hcn.canvas.height);
+        }
+
+        function handleRamdomClick() {
+            let w = Math.ramdom() * 200;
+            let h = Math.ramdom() * 100;
+            rectangle.setHeight(w);
+            rectangle.setWidth(h);
+            console.log(`Gia tri w : ${w}h: ${h}`);
+            createrRectangle("#FF0000");
+        }
+        createrRectangle();
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hình chữ nhật</title>
+</head>
+<body>
+    <canvas id="canvas" width="500px" height="250px" style="border: 1px solid #e01e1e;"></canvas>
+    <button value="Ramdom Rec" onclick="handleRamdomClick">Ramdom Rec</button>
+    <button value="Area Rec">Area Rec</button>
+    <button value="Perimiter Rec">Perimiter Rec</button>
+    <button value="X2 Size">X2 Size</button>
+    <button value="ChangleColor">ChangleColor</button>
+    <script>
+        function Rectangle(x, y, width, height) {
+            this.x = x;
+            this.y = y;
+            this.width = width;
+            this.height = height;
+        }
+        function createrRectangle() {
+                var canvas = document.getElementById("canvas").getContext("2d");
+                var rectangle = new Rectangle(100, 100, 300, 300);
+                // canvas.beginPath();
+                canvas.fillRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
+                canvas.fillStyle = '#e01e1e';
+                // canvas.fill();
+        }
+      createrRectangle()
+    </script>
+</body>
+</html>
